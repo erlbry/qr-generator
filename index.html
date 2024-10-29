@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Customizable QR Code Generator</h1>
+        <div class="qr-generator">
+            <form id="qrForm">
+                <div class="input-group">
+                    <label for="dataInput">Data:</label>
+                    <input type="text" id="dataInput" placeholder="Enter text or URL" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="bgColorInput">Background Color:</label>
+                    <input type="color" id="bgColorInput" value="#ffffff">
+                </div>
+                
+                <div class="input-group">
+                    <label for="dotColorInput">Dot Color:</label>
+                    <input type="color" id="dotColorInput" value="#000000">
+                </div>
+                
+                <button type="button" id="generateBtn">Generate QR Code</button>
+            </form>
+            <div id="canvas"></div>
+        </div>
+        <button id="downloadBtn">Download QR Code</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
